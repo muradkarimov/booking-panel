@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="">
+        <div class="container">
+            <div class="sidebar__container">
+                <div class="progress__bar">
+                    <div class="progress__bar__step progress__bar__step__active" data-title="Staff"></div>
+                    <div class="progress__bar__step" data-title="Service"></div>
+                    <div class="progress__bar__step" data-title="Date & Time"></div>
+                    <div class="progress__bar__step" data-title="Confirmation"></div>
+                </div>
+            </div>
+    
+    
+            <div class="main__container">
+                <div class="__container form__step ">
+                    <div class="selection">
+                        <h1>Select staff</h1>
+                    </div>
+                    <div class="types" id="staff__members">
+                    </div>
+                    <div class="footer">
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+    
+                <div class="__container form__step form__step__active">
+                    <div class="selection">
+                        <h1>Select service</h1>
+                    </div>
+                    <div class="types" id="service__types">
+                    </div>
+                    <div class="footer">
+                        <button class="previous">Previous</button>
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+
+
+                <div class="__container form__step">
+                    <div class="selection">
+                        <h1>Select service</h1>
+                    </div>
+                    <div class="types" id="service__types">
+                    </div>
+                    <div class="footer">
+                        <button class="previous">Previous</button>
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+    </form>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
