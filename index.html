@@ -1,73 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9a33a61e91.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <form action="">
-        <div class="container">
-            <div class="sidebar__container">
-                <div class="progress__bar">
-                    <div class="progress__bar__step progress__bar__step__active" data-title="Staff"></div>
-                    <div class="progress__bar__step" data-title="Service"></div>
-                    <div class="progress__bar__step" data-title="Date & Time"></div>
-                    <div class="progress__bar__step" data-title="Confirmation"></div>
-                </div>
-            </div>
-    
-    
-            <div class="main__container">
-                <div class="__container form__step ">
-                    <div class="selection">
-                        <h1>Select staff</h1>
-                    </div>
-                    <div class="types" id="staff__members">
-                    </div>
-                    <div class="footer">
-                        <button class="next">Next</button>
-                    </div>
-                </div>
-    
-                <div class="__container form__step form__step__active">
-                    <div class="selection">
-                        <h1>Select service</h1>
-                    </div>
-                    <div class="types" id="service__types">
-                    </div>
-                    <div class="footer">
-                        <button class="previous">Previous</button>
-                        <button class="next">Next</button>
-                    </div>
-                </div>
-
-
-                <div class="__container form__step">
-                    <div class="selection">
-                        <h1>Select service</h1>
-                    </div>
-                    <div class="types" id="service__types">
-                    </div>
-                    <div class="footer">
-                        <button class="previous">Previous</button>
-                        <button class="next">Next</button>
-                    </div>
-                </div>
-            </div>
-    
-    
+      <div class="container">
+        <div class="sidebar__container">
+          <div class="progress__bar">
+            <div class="progress__bar__step progress__bar__step__active" data-title="Staff" > <span class="stage__number">1</span><i class="fa-solid fa-check "></i></div>
+            <div class="progress__bar__step" data-title="Service"><span class="stage__number">2</span><i class="fa-solid fa-check"></i></div>
+            <div class="progress__bar__step" data-title="Date & Time"><span class="stage__number">3</span><i class="fa-solid fa-check"></i></div>
+            <div class="progress__bar__step" data-title="Confirmation"><span class="stage__number">4</span><i class="fa-solid fa-check"></i></div>
+          </div>
         </div>
+
+        <div class="main__container">
+          <div class="__container form__step form__step__active">
+            <div class="selection">
+              <h1>Select staff</h1>
+            </div>
+            <div class="types" id="staff__members"></div>
+            <div class="footer">
+              <button class="next btn" id="next">Next</button>
+              <p id="restriction"><i class="fa-solid fa-circle-info"></i>SELECT STAFF</p>
+            </div>
+          </div>
+
+          <div class="__container form__step">
+            <div class="selection">
+              <h1>Select service</h1>
+            </div>
+            <div class="types" id="service__types"></div>
+            <div class="footer">
+              <button class="previous btn" id="back1">Back</button>
+              <button class="next btn" id="next1">Next</button>
+              <p id="restriction1"><i class="fa-solid fa-circle-info"></i>SELECT SERVICE</p>
+            </div>
+          </div>
+
+
+          <div class="__container form__step">
+            <div class="selection">
+              <h1>Select date & time</h1>
+            </div>
+            <div class="date__time__container">
+                <div class="date__container">
+                    <div class="date">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <span>AUGUST 2023</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="date__table">
+                        <table>
+                            <tr class="header">
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sut</th>
+                            </tr>
+                            <tr>
+                                <td class="empty"></td>
+                                <td class="empty"></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td class="dark" id="dark1">4</td>
+                                <td class="dark" id="dark2">5</td>
+                            </tr>
+                            <tr>
+                                <td class="dark" id="dark3">6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td class="empty"></td>
+                                <td class="empty"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="time__container">
+                    <div class="time__header">Time</div>
+                    <div class="time">
+                        <h1 id="time__header">Select date</h1>
+                        <div id="time">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+              <button class="previous btn" type="button">Back</button>
+              <button class="next btn" id="next2">Next</button>
+              <p id="restriction2"><i class="fa-solid fa-circle-info"></i>SELECT DATE & TIME</p>
+            </div>
+          </div>
+
+
+          <div class="__container form__step">
+            <div class="selection">
+              <h1>Confirmation details</h1>
+            </div>
+            <div class="form__container">
+                <div class="form">
+                    <label for="">First name <span>*</span></label>
+                    <input type="text" id="name">
+                    <label for="">Email<span>*</span></label>
+                    <input type="email"  id="email">
+                </div>
+                <div class="form">
+                    <label for="">Last name <span>*</span></label>
+                    <input type="text"  id="surname">
+                    <label for="">Phone</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="message" id="message">
+                <span class="close" id="close">&times;</span>
+                <div id="message__text"></div>
+            </div>
+
+            <div class="details__container">
+                <h1>Note</h1>
+                <div class="details">
+                    <h2>Staff: <span id="object__staff"></span></h2>
+                    <h2>Service: <span id="object__service"></span></h2>
+                    <h2>Date: <span id="object__date"></span></h2>
+                    <h2>Price: <span id="object__price" class="span"></span></h2>
+                </div>
+            </div>
+            <div class="footer">
+              <button class="previous btn" type="button">Back</button>
+              <button class="next btn" id="next3">CONFIRM BOOKING</button>
+            </div>
+          </div>
+
+
+
+
+
+
+
+        
+        </div>
+      </div>
     </form>
 
-    
-
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
