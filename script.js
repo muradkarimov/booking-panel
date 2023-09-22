@@ -76,7 +76,7 @@ staff.forEach((value) => {
         <h4 id="info__email">${value.email}</h4>
     </div>
 </button>`;
-  console.log(value.name);
+  //console.log(value.name);
 });
 services.forEach((value) => {
   service__types.innerHTML += ` 
@@ -99,7 +99,7 @@ for (var i = 0; i < dark.length; i++) {
       timeDiv.innerHTML = "";
       time.forEach((value) => {
         const current = `${value.id}`;
-        console.log(current);
+        //console.log(current);
             timeDiv.innerHTML += `
             <div class="exact__time" id="exact__time${value.id}">
             <p>${value.start_time}</p>
@@ -109,7 +109,7 @@ for (var i = 0; i < dark.length; i++) {
             const exactTime1 = document.getElementById("exact__time1");
             const exactTime2 = document.getElementById("exact__time2");
             const exactTime3 = document.getElementById("exact__time3");
-            console.log(exactTime1,exactTime2,exactTime3)
+           // console.log(exactTime1,exactTime2,exactTime3)
             if(current ==3){
               exactTime1.addEventListener("click", function () {
                 exactTime1.classList.add("exact__time__active");
@@ -118,7 +118,7 @@ for (var i = 0; i < dark.length; i++) {
                 object.date += time[0].start_time 
                 object.date += "-"
                 object.date += time[0].end_time
-                console.log(object.date.length)
+               // console.log(object.date.length)
                 formStepsNum++;
                 updateFormSteps();
                 restriction2.classList.remove("active");
@@ -158,7 +158,7 @@ for (var i = 0; i < dark.length; i++) {
       
       time.forEach((value) => {
         const current = value.id;
-        console.log(current);
+       // console.log(current);
         timeDiv.innerHTML += `
             <div class="exact__time" id="exact__time${value.id}">
             <p>${value.start_time}</p>
@@ -168,7 +168,7 @@ for (var i = 0; i < dark.length; i++) {
             const exactTime1 = document.getElementById("exact__time1");
       const exactTime2 = document.getElementById("exact__time2");
       const exactTime3 = document.getElementById("exact__time3");
-      console.log(exactTime1,exactTime2,exactTime3)
+     // console.log(exactTime1,exactTime2,exactTime3)
       if(current ==3){
         exactTime1.addEventListener("click", function () {
           exactTime1.classList.add("exact__time__active");
@@ -224,7 +224,7 @@ dark1.addEventListener("click", function () {
   object.date = "";
   object.date = timeHeader.innerHTML;
   object.date += "/";
-  console.log(object.date)
+ // console.log(object.date)
 });
 dark2.addEventListener("click", function () {
   dark2.classList.add("dark__active");
@@ -234,7 +234,7 @@ dark2.addEventListener("click", function () {
   object.date = "";
   object.date = timeHeader.innerHTML;
   object.date += "/";
-  console.log(object.date)
+ // console.log(object.date)
 });
 
 dark3.addEventListener("click", function () {
@@ -245,7 +245,7 @@ dark3.addEventListener("click", function () {
   object.date = "";
   object.date = timeHeader.innerHTML;
   object.date += "/";
-  console.log(object.date)
+ // console.log(object.date)
 });
 
 
@@ -299,7 +299,7 @@ staffMember1.addEventListener("click", function () {
   progressSteps[0].style.setProperty("--check-primary", "#fff");
   icon[0].classList.add("active");
   stageNumber[0].classList.add("none");
-  console.log(progressSteps[0]);
+ // console.log(progressSteps[0]);
 });
 
 staffMember2.addEventListener("click", function () {
@@ -414,7 +414,7 @@ next2.addEventListener("click", function (event) {
 });
 next3.addEventListener("click", function (event) {
   event.preventDefault();
-  console.log(messageText);
+ // console.log(messageText);
   object.name = formName.value;
   object.surname = formSurname.value;
   object.email = formEmail.value;
@@ -457,7 +457,7 @@ prevBtns.forEach((btn) => {
     progressSteps[formStepsNum].style.setProperty("--check-primary", "#53d56c");
     icon[formStepsNum].classList.remove("active");
     stageNumber[formStepsNum].classList.remove("none");
-    console.log(progressSteps[0]);
+    //console.log(progressSteps[0]);
   });
 });
 
