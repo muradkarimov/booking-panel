@@ -3,27 +3,27 @@ const staff = [
     id: 1,
     name: "Alex Rosetta",
     email: "alexyrosetta@egmail.com",
-    image: "../images/unsplash_279xIHymPYY.png",
+    image: "./images/unsplash_279xIHymPYY.png",
   },
   {
     id: 2,
     name: "Maria July",
     email: "mariajuly@egmail.com",
-    image: "../images/unsplash_IF9TK5Uy-KI.png",
+    image: "./images/unsplash_IF9TK5Uy-KI.png",
   },
 ];
 const services = [
   {
     id: 1,
     name: "Oral hygiene",
-    image: "../images/unsplash_MLJHxQ5qxxY.png",
+    image: "./images/unsplash_MLJHxQ5qxxY.png",
     duration: "1 hour",
     price: 50.0,
   },
   {
     id: 2,
     name: "Implants",
-    image: "../images/unsplash_fmB7IdFjhTM.png",
+    image: "./images/unsplash_fmB7IdFjhTM.png",
     duration: "1 hour 30 minutes",
     price: 120.0,
   },
